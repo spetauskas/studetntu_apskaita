@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace studetntu_apskaita.Entities
 {
-    internal class Departament
+    public class Departament
     {
-        public int DepartamentID { get; set; } 
+        public string DepartmentId { get; set; } //cs12356 
         public string DepartamentName { get; set; }
+        public ICollection<Lecture> Lecture { get; set; } = new List<Lecture>();    
 
     }
 }
+ 
